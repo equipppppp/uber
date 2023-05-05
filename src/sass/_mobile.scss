@@ -1,0 +1,19 @@
+.mobile {
+  padding-top: 45px;
+  padding-bottom: 80px;
+  background-image: url(../images/mobilebg.png);
+
+  @media (max-width: $width-large) {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $width-small) {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  &__advantages {
+    margin-top: 10px;
+  }
+}

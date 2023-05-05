@@ -1,0 +1,88 @@
+.advantages {
+  @include flex(space-between);
+  flex-wrap: wrap;
+
+  @media (max-width: $width-large) {
+    justify-content: center;
+    gap: 50px;
+  }
+
+  @media (max-width: $width-small) {
+    gap: 20px;
+  }
+}
+
+.advantage {
+  position: relative;
+
+  width: 300px;
+  height: 280px;
+  margin-top: 20px;
+  padding: 82px 10px 0;
+
+  @media (max-width: $width-large) {
+    margin-top: 0;
+  }
+
+  &__header {
+    font-size: 24px;
+    line-height: 31px;
+
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__plus {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    background-color: $black;
+    border-radius: 50%;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $java;
+    }
+    &::after {
+      top: 8px;
+      left: 14px;
+
+      width: 2px;
+      height: 14px;
+    }
+    &::before {
+      top: 14px;
+      left: 8px;
+
+      width: 14px;
+      height: 2px;
+    }
+  }
+
+  &_first {
+    background-image: url(../images/mobile/card1.png);
+  }
+  &_second {
+    background-image: url(../images/mobile/card2.png);
+  }
+  &_third {
+    background-image: url(../images/mobile/card3.png);
+  }
+  &_fourth {
+    background-image: url(../images/mobile/card4.png);
+  }
+  &_fifth {
+    background-image: url(../images/mobile/card5.png);
+  }
+  &_sixth {
+    background-image: url(../images/mobile/card6.png);
+  }
+}

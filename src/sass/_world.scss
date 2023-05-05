@@ -1,0 +1,28 @@
+.world {
+  position: relative;
+
+  aspect-ratio: 2/1;
+  width: 100%;
+  min-height: 300px;
+  max-height: 700px;
+  padding-top: 48px;
+
+  background-image: url(../images/worldbg.png);
+  background-position: center;
+  background-size: cover;
+
+  &__link {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: max-content;
+
+    color: $java;
+  }
+}

@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+@import "container";
+@import "button";
+@import "header";
+@import "main";
+@import "subheader";
+@import "promo";
+@import "reasons";
+@import "title";
+@import "mobile";
+@import "mainHeader";
+@import "advantages";
+@import "choice";
+@import "conditions";
+@import "world";
+@import "footer";
+@import "socials";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-block: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}

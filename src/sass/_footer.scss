@@ -1,0 +1,60 @@
+.footer {
+  padding: 50px 0;
+
+  @media (max-width: $width-large) {
+    padding: 35px 0;
+  }
+
+  @media (max-width: $width-small) {
+    padding: 20px 0;
+  }
+
+  &__menu {
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @include flex(center);
+    gap: 30px;
+
+    color: #070716;
+
+    @media (max-width: $width-tiny) {
+      font-size: 14px;
+      gap: 10px;
+    }
+
+    &_small {
+      font-size: 11px;
+
+      gap: 10px;
+      margin-top: 15px;
+
+      color: #999999;
+
+      @media (max-width: $width-small) {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  }
+
+  &__language {
+    font-size: 11px;
+    text-transform: uppercase;
+
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+
+    border: none;
+    color: $java;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &__socials {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}

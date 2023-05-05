@@ -1,0 +1,26 @@
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 7px;
+
+  background-color: $black;
+  color: $white;
+
+  @media (max-width: $width-large) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $width-small) {
+    margin-bottom: 15px;
+  }
+
+  &_white {
+    background-color: $white;
+    color: $black;
+  }
+}

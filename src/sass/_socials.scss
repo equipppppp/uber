@@ -1,0 +1,15 @@
+.socials {
+  display: flex;
+  gap: 5px;
+  width: max-content;
+
+  &__link {
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+
+    background-color: $black;
+    border-radius: 50%;
+  }
+}

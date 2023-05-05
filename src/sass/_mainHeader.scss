@@ -1,0 +1,25 @@
+.mainHeader {
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: $width-large) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $width-small) {
+    font-size: 24px;
+  }
+
+  &_white {
+    color: $white;
+  }
+}
+
+.secondaryHeader {
+  text-align: center;
+  margin-top: 10px;
+  &_white {
+    color: $white;
+  }
+}
